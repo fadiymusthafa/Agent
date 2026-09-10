@@ -34,7 +34,7 @@ def generate_email_with_gemini(command):
   {command}
   """
 
-        url=(
+    url=(
             f"https://generativelanguage.googleapis.com/"
             f"v1beta/models/{MODEL}:generateContent"
         )
