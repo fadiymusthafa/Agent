@@ -69,7 +69,7 @@ def create_app():
                 "subject": email["subject"],
                 "body": email["body"],
                 "gmail_url":create_gmail_url(
-                    email["subject'],
+                    email["subject"],
                     email["body"],
                     recipient
                 )
