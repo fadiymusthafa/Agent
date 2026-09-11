@@ -71,7 +71,7 @@ def generate_email_with_gemini(command):
                 raise RuntimeError("Gemini returned an invalid email format.")
 
             return {
-                    "subject":subject.group(1).strip()
+                    "subject":subject.group(1).strip(),
                     "body":body.group(1).strip()
                 }
 
