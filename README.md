@@ -18,15 +18,17 @@ index.html: The central UI that connects the backend agents, allowing users to i
 ## Project Structure
 
 ```text
-app/
-├── __init__.py
-├── gmail/
+.
+├── app/
 │   ├── __init__.py
-│   ├── gmail_gen.py      # Module for generating context-aware email content 
-│   └── gmail_write.py    # Interfaces with Gmail API for drafting and sending
-├── templates/
-│   └── index.html        # Main front-end web interface
-└── youtube/
-    ├── __init__.py
-    └── player.py         # YouTube playback management and controls
-```
+│   ├── gmail/
+│   │   ├── __init__.py
+│   │   ├── gmail_gen.py      # Logic for generating email content
+│   │   └── gmail_write.py    # Logic for authenticating and sending emails
+│   ├── templates/
+│   │   └── index.html        # Main web interface
+│   └── youtube/
+│       ├── __init__.py
+│       └── player.py         # YouTube interaction and player logic
+├── requirements.txt          # Python dependencies
+└── wsgi.py                   # WSGI entry point for web servers
