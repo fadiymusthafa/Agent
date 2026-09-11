@@ -16,6 +16,8 @@ player.py: Manages YouTube video playback, providing custom programmatic control
 index.html: The central UI that connects the backend agents, allowing users to interact with both the email generator and the video player in one place.
 
 ## Project Structure
+
+```text
 app/
 ├── __init__.py
 ├── gmail/
@@ -27,5 +29,4 @@ app/
 └── youtube/
     ├── __init__.py
     └── player.py         # YouTube playback management and controls
-
-
+```
